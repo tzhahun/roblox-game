@@ -1,0 +1,31 @@
+# Roblox Studio cannot run on GitHub-hosted runners.
+# This workflow only checks Luau format and lint.
+
+name: Luau
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Stylua
+        run: |
+          curl -fsSL https://github.com/JohnnyMorganz/StyLua/releases/download/v2.0.2/stylua-linux-x86_64.zip -o stylua.zip
+          unzip stylua.zip -d /usr/local/bin
+
+      - name: Install Selene
+        run: |
+          curl -fsSL https://github.com/Kampfkarren/selene/releases/download/0.27.1/selene-linux-x86_64.zip -o selene.zip
+          unzip selene.zip -d /usr/local/bin
+
+      - name: Check formatting
+        run: stylua --check src tests
+
+      - name: Lint
+        run: selene src tests

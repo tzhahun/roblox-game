@@ -7,7 +7,7 @@ Install these on your **Windows** dev machine. Order matters: do **Aftman** firs
 | Tool | Purpose | Install |
 |------|---------|---------|
 | **Roblox Studio** | Build worlds, UI, publish the experience | [Create on Roblox](https://www.roblox.com/create) → download Studio |
-| **Git** | Version control, GitLab | [git-scm.com](https://git-scm.com/download/win) |
+| **Git** | Version control, GitHub | [git-scm.com](https://git-scm.com/download/win) |
 | **Aftman** | Pin Rojo, Stylua, Selene, etc. | `winget install UpliftGames.Aftman` or [releases](https://github.com/LPGhatguy/aftman/releases) |
 | **Rojo** | Sync `src/` into Studio; team workflow | `aftman install` (see `aftman.toml`) |
 | **Rojo Studio plugin** | Connect Studio to `rojo serve` | [Rojo plugin install](https://rojo.space/docs/v7/getting-started/installation/) |
@@ -28,7 +28,7 @@ wally install
 | **Stylua** | Format Luau | `aftman install` |
 | **Selene** | Lint Luau | `aftman install` |
 | **Luau LSP** (extension) | Autocomplete, types in Cursor/VS Code | Extension: *Luau Language Server* |
-| **GitLab CLI (`glab`)** | Create repos, MRs from terminal | `winget install GitLab.GLab` then `glab auth login` |
+| **GitHub CLI (`gh`)** | Create repos, PRs from terminal | `winget install GitHub.cli` then `gh auth login` |
 
 ## Optional (larger games)
 

@@ -48,7 +48,7 @@ Adjust paths to match where Rojo places `tests`.
 
 - **Real device performance** — use Roblox on phone/tablet after publish to a private/unlisted experience.
 - **Live production data** — use a separate “Staging” place ID.
-- **Full CI playtest** — GitLab runners cannot run Studio; CI here only lints/formats (see `.gitlab-ci.yml`).
+- **Full CI playtest** — GitHub Actions cannot run Studio; CI only lints/formats (see `.github/workflows/luau.yml`).
 
 ## Verify test setup
 

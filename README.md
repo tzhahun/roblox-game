@@ -27,18 +27,28 @@ src/
 tests/        # TestEZ specs (run in Studio or CI)
 ```
 
-## GitLab
+## GitHub
 
-Create the remote project (once `glab` is authenticated):
+Repo: **https://github.com/tzhahun/roblox-game**
+
+Clone:
 
 ```powershell
-glab repo create roblox-game --private --description "Roblox game (Rojo + Luau)" --remote origin
+git clone https://github.com/tzhahun/roblox-game.git
+cd roblox-game
+```
+
+Push local changes (after [GitHub CLI](https://cli.github.com/) login, or use the website):
+
+```powershell
+cd C:\Users\User\projects\roblox-game
+git remote set-url origin https://github.com/tzhahun/roblox-game.git
 git push -u origin main
 ```
 
-Or create the project in the GitLab UI, then:
+Create the repo on GitHub if it does not exist yet:
 
 ```powershell
-git remote add origin https://gitlab.com/<your-group>/roblox-game.git
-git push -u origin main
+gh auth login
+gh repo create tzhahun/roblox-game --private --source=. --remote=origin --push
 ```
