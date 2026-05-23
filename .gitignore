@@ -1,0 +1,17 @@
+# Roblox / Luau
+Packages/
+ServerPackages/
+DevPackages/
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+
+# Tooling
+.aftman/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp

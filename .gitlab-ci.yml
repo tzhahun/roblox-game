@@ -1,0 +1,24 @@
+# Roblox Studio cannot run on GitLab shared runners.
+# This pipeline checks Luau style and lint only.
+
+stages:
+  - validate
+
+variables:
+  GIT_SUBMODULE_STRATEGY: none
+
+validate:lint:
+  stage: validate
+  image: alpine:latest
+  before_script:
+    - apk add --no-cache curl bash unzip
+    - curl -fsSL https://github.com/JohnnyMorganz/StyLua/releases/download/v2.0.2/stylua-linux-x86_64.zip -o stylua.zip
+    - unzip stylua.zip -d /usr/local/bin
+    - curl -fsSL https://github.com/Kampfkarren/selene/releases/download/0.27.1/selene-linux-x86_64.zip -o selene.zip
+    - unzip selene.zip -d /usr/local/bin
+  script:
+    - stylua --check src tests
+    - selene src tests
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH
