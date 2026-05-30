@@ -13,6 +13,9 @@
     "ServerScriptService": {
       "Server": {
         "$path": "src/server"
+      },
+      "PortalGame": {
+        "$path": "src/portals/PortalGame.server.luau"
       }
     },
     "StarterPlayer": {
@@ -25,6 +28,11 @@
     "ServerStorage": {
       "Tests": {
         "$path": "tests"
+      }
+    },
+    "Workspace": {
+      "GamePortals": {
+        "$path": "world/GamePortals"
       }
     }
   }

@@ -1,6 +1,18 @@
-# Roblox Game
+# Orb Knockout
 
-Professional Roblox development setup using **Rojo** (filesystem ↔ Studio sync), **Aftman** (tool versions), and **Wally** (Luau packages).
+Multiplayer **orb brawl**: everyone is a glowing ball on a floating platform. Bump others to knock them off — last orb standing wins the round.
+
+Built with **Rojo**, **Aftman**, and **Wally**.
+
+## How to play
+
+| Control | Action |
+|---------|--------|
+| **WASD** | Roll around |
+| **Space** | Jump |
+| **Q** | Dash (cooldown) — slam into other orbs |
+
+Fall off the platform and you're out until the next round.
 
 ## Quick start
 

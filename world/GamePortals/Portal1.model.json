@@ -1,0 +1,149 @@
+{
+  "className": "Model",
+  "attributes": {
+    "DestinationOnly": true
+  },
+  "children": [
+    {
+      "name": "Platform",
+      "className": "Part",
+      "properties": {
+        "Anchored": true,
+        "Size": [36, 1.2, 36],
+        "Position": [0, 10, 0],
+        "Color": [0.18, 0.23, 0.28],
+        "Material": "SmoothPlastic",
+        "CanCollide": true
+      }
+    },
+    {
+      "name": "EntrancePad",
+      "className": "Part",
+      "properties": {
+        "Anchored": true,
+        "Shape": "Cylinder",
+        "Size": [0.5, 16, 16],
+        "Position": [0, 10.6, 0],
+        "Orientation": [0, 0, 90],
+        "Color": [0.47, 0.86, 1],
+        "Material": "Neon",
+        "CanCollide": false
+      }
+    },
+    {
+      "name": "EntranceRing",
+      "className": "Part",
+      "properties": {
+        "Anchored": true,
+        "Shape": "Cylinder",
+        "Size": [0.45, 18, 18],
+        "Position": [0, 11.6, 0],
+        "Orientation": [0, 0, 90],
+        "Color": [0.82, 0.96, 1],
+        "Material": "Neon",
+        "CanCollide": false
+      }
+    },
+    {
+      "name": "EntranceCore",
+      "className": "Part",
+      "properties": {
+        "Anchored": true,
+        "Shape": "Ball",
+        "Size": [7, 7, 7],
+        "Position": [0, 12.6, 0],
+        "Color": [0.82, 0.96, 1],
+        "Material": "Glass",
+        "Transparency": 0.4,
+        "CanCollide": false
+      }
+    },
+    {
+      "name": "EntrancePillar0",
+      "className": "Part",
+      "properties": {
+        "Anchored": true,
+        "Size": [1, 7, 1],
+        "Position": [5.66, 13.5, 5.66],
+        "Color": [0.27, 0.59, 0.82],
+        "Material": "Neon",
+        "CanCollide": false
+      }
+    },
+    {
+      "name": "EntrancePillar1",
+      "className": "Part",
+      "properties": {
+        "Anchored": true,
+        "Size": [1, 7, 1],
+        "Position": [-5.66, 13.5, 5.66],
+        "Color": [0.27, 0.59, 0.82],
+        "Material": "Neon",
+        "CanCollide": false
+      }
+    },
+    {
+      "name": "EntrancePillar2",
+      "className": "Part",
+      "properties": {
+        "Anchored": true,
+        "Size": [1, 7, 1],
+        "Position": [-5.66, 13.5, -5.66],
+        "Color": [0.27, 0.59, 0.82],
+        "Material": "Neon",
+        "CanCollide": false
+      }
+    },
+    {
+      "name": "EntrancePillar3",
+      "className": "Part",
+      "properties": {
+        "Anchored": true,
+        "Size": [1, 7, 1],
+        "Position": [5.66, 13.5, -5.66],
+        "Color": [0.27, 0.59, 0.82],
+        "Material": "Neon",
+        "CanCollide": false
+      }
+    },
+    {
+      "name": "EntranceArch",
+      "className": "Part",
+      "properties": {
+        "Anchored": true,
+        "Size": [17, 0.8, 1],
+        "Position": [0, 17.2, 0],
+        "Color": [0.82, 0.96, 1],
+        "Material": "Neon",
+        "CanCollide": false
+      }
+    },
+    {
+      "name": "Sign",
+      "className": "Part",
+      "properties": {
+        "Anchored": true,
+        "Size": [8, 2.5, 0.3],
+        "Position": [0, 18.8, -1.2],
+        "Color": [1, 1, 1],
+        "Material": "Neon",
+        "CanCollide": false
+      }
+    },
+    {
+      "name": "Trigger",
+      "className": "Part",
+      "attributes": {
+        "DestinationOnly": true
+      },
+      "properties": {
+        "Anchored": true,
+        "Transparency": 1,
+        "CanCollide": false,
+        "CanTouch": true,
+        "Size": [18, 12, 18],
+        "Position": [0, 17, 0]
+      }
+    }
+  ]
+}

@@ -1,5 +1,9 @@
--- Run in Studio after Rojo sync (Play or command bar).
--- Remove or disable in published builds.
+-- Optional: set to true to run TestEZ when you press Play in Studio.
+local RUN_TESTS_IN_STUDIO = false
+
+if not RUN_TESTS_IN_STUDIO then
+	return
+end
 
 local ServerStorage = game:GetService("ServerStorage")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
